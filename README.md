@@ -44,6 +44,24 @@ Follow the interactive prompts to:
 3. Set MTU and payload size
 4. View the fragmentation results and routing paths
 
+## Docker Support
+
+You can also run the application using Docker, which ensures consistent execution across different systems:
+
+### Building the Docker Image
+
+```
+docker build -t ipv4-router .
+```
+
+### Running the Application in a Docker Container
+
+```
+docker run -it ipv4-router
+```
+
+The `-it` flags ensure you can interact with the program's interface.
+
 ## Module Details
 
 ### Network Module
