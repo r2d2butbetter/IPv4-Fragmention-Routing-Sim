@@ -13,11 +13,11 @@ This program simulates IPv4 packet fragmentation and routes each fragment using 
 
 ## Project Structure
 
-- `main.c`: Main program logic and workflow
-- `network.h/c`: Network topology representation and management
-- `ipv4.h/c`: IPv4 packet structures and fragmentation functions
-- `dijkstra.h/c`: Implementation of Dijkstra's shortest path algorithm
-- `ui.h/c`: User interface functions
+- `src/main.c`: Main program logic and workflow
+- `src/network.c` & `include/network.h`: Network topology representation and management
+- `src/ipv4.c` & `include/ipv4.h`: IPv4 packet structures and fragmentation functions
+- `src/dijkstra.c` & `include/dijkstra.h`: Implementation of Dijkstra's shortest path algorithm
+- `src/ui.c` & `include/ui.h`: User interface functions
 - `Makefile`: Compilation instructions
 
 ## Compilation
@@ -28,14 +28,14 @@ Use the provided Makefile to compile the program:
 make
 ```
 
-This will create an executable named `ipv4_router`.
+This will create an executable named `network_sim` in the `build` directory.
 
 ## Usage
 
 Run the compiled program:
 
 ```
-./ipv4_router
+./build/network_sim
 ```
 
 Follow the interactive prompts to:
