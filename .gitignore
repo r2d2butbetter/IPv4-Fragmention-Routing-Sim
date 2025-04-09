@@ -1,0 +1,21 @@
+# Build artifacts
+*.o
+*.out
+*.exe
+network_sim
+
+# Build directory
+build/
+
+# Object and dependency files
+*.d
+*.obj
+
+# Editor files
+.vscode/
+*~
+*.swp
+
+# OS specific
+.DS_Store
+Thumbs.db
