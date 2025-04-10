@@ -30,15 +30,15 @@ void add_connection(network_topology* network, int from, int to, int weight) {
 }
 
 void create_test_topology(network_topology* network) {
-  init_network_topology(network, 6);
+  init_network_topology(network, 6); //6nodes
 
   // Add connections (directed graph)
-  add_connection(network, 0, 1, 2);  // Node 0 -> Node 1, weight 2
-  add_connection(network, 0, 2, 4);  // Node 0 -> Node 2, weight 4
-  add_connection(network, 1, 2, 1);  // Node 1 -> Node 2, weight 1
-  add_connection(network, 1, 3, 7);  // Node 1 -> Node 3, weight 7
-  add_connection(network, 2, 4, 3);  // Node 2 -> Node 4, weight 3
-  add_connection(network, 3, 4, 2);  // Node 3 -> Node 4, weight 2
+  add_connection(network, 0, 1, 7);  // Node 0 -> Node 1, weight 7
+  add_connection(network, 0, 2, 12);  // Node 0 -> Node 2, weight 12
+  add_connection(network, 1, 2, 2);  // Node 1 -> Node 2, weight 2
+  add_connection(network, 1, 3, 9);  // Node 1 -> Node 3, weight 9
+  add_connection(network, 2, 4, 10); // Node 2 -> Node 4, weight 10
+  add_connection(network, 4, 3, 4);  // Node 4 -> Node 3, weight 4
   add_connection(network, 3, 5, 1);  // Node 3 -> Node 5, weight 1
   add_connection(network, 4, 5, 5);  // Node 4 -> Node 5, weight 5
 
