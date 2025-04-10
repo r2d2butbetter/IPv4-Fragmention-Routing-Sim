@@ -90,11 +90,11 @@ int fragment_ipv4_packet(ipv4_packet* packet, int mtu, ipv4_fragment** fragments
 
             if (i < num_fragments - 1) //there are more left
             {
-                (*fragments)[i].header.flags_frag_offset = 0x2000 | frag_offset;  //fragmenttation bit set to 1
+                (*fragments)[i].header.flags_frag_offset = 0x2000 | frag_offset;  //More Fragments bit set to 1
             }
             else //this is the last fragment
             {
-                (*fragments)[i].header.flags_frag_offset = 0x0000 | frag_offset; 
+                (*fragments)[i].header.flags_frag_offset = frag_offset; //No More Fragments flag for last fragment
             }
             
             //allocate and copy fragment data

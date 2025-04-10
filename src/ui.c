@@ -140,7 +140,7 @@ void display_fragment_info(ipv4_fragment* fragment, int fragment_num)
     
     printf("    Flags: 0x%X (", flags);
     if (flags & 0x4) printf("Don't Fragment, ");
-    if (flags & 0x2) printf("More Fragments");
+    if (flags & 0x1) printf("More Fragments");
     else printf("Last Fragment");
     printf(")\n");
     
